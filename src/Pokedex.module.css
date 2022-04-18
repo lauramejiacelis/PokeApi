@@ -4,5 +4,8 @@
 }
 
 .pokemonInfoContainer{
+    margin: 0 auto;
     border: 1px solid LightGray;
+    width: 500px;
+    padding: 30px;
 }

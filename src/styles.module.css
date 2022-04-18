@@ -19,10 +19,12 @@
   flex-wrap: wrap;
   gap: 10px;
   margin: 0px 30px;
+  
 }
 
 .pokemonsNames{
   display: grid;
   padding: 10px;
   border: 1px solid LightGray;
+  text-decoration: none;
 }
