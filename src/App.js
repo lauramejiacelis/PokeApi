@@ -1,12 +1,11 @@
-import styles from './styles.module.css';
-import { Component } from 'react';
-import { Routes, Route} from 'react-router-dom';
-import Home from './Home';
-import Pokedex from './Pokedex';
+import styles from "./App.module.css";
+import { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Pokedex from "./Pokedex";
 
 class App extends Component {
-
-  render(){
+  render() {
     return (
       <div className={styles.mainContainer}>
         <img
@@ -15,8 +14,8 @@ class App extends Component {
           alt=""
         />
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/Pokedex' element={<Pokedex/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/Pokedex/:name" element={<Pokedex />} />
         </Routes>
       </div>
     );
